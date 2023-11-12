@@ -18,9 +18,9 @@
 ## Dynamic Programming
   - [0-1 Knapsack](Dynamic%20Programming/(0-1)%20Knapsack.cpp)
   - [Coin Change](Dynamic%20Programming/Coin%20Change.cpp)
-  - Max Sum Subarray: [1D](Dynamic%20Programming/1D%20Max%20Sum%20(Kanade).cpp), [2D](Dynamic%20Programming/2D%20Max%20Sum.cpp)
+  - Max Sum Subarray: [1D](Dynamic%20Programming/1D%20Max%20Sum%20(Kanade).cpp), [2D](Dynamic%20Programming/2D%20Max%20Sum.cpp) [Check 2D]
   - [Longest Common Subsequence](Dynamic%20Programming/Longest%20Common%20Subsequence%20(LCS).cpp)
-  - [Longest Increasing Subsequence](Dynamic%20Programming/Longest%20Increasing%20Subsequence%20(LIS).cpp)
+  - [Longest Increasing Subsequence](Dynamic%20Programming/Longest%20Increasing%20Subsequence%20(LIS).cpp)  [Check]
   - [Digit DP](Dynamic%20Programming/Digit%20DP.cpp)
   - [SOS DP](Dynamic%20Programming/SOS%20DP.cpp)
   - [Weighted Job Scheduling](Dynamic%20Programming/Weighted%20Job%20Scheduling.cpp)
