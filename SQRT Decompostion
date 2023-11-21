@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+const int N = 1e5 + 2;
+const int block_size = 4;
+int n;
+int cnt[block_size][N];
+int a[N];
+
+void preprocess() {
+	for (int i = 0; i < n; i++)
+		cnt[i / block_size][a[i]]++;
+}
+
+void update(int u, int v) {
+	int block = u / block_size;
+	cnt[block][a[u]]--;
+	a[u] = v;
+	cnt[block][a[u]]++;
+}
+int query(int l, int r, int k) {
+	int block_left = (l + block_size - 1) / block_size;
+	int block_right = r / block_size;
+
+	if (block_left >= block_right)
+		return count(a + l, a + r + 1, k);
+	int sum = 0;
+	for (int i = block_left; i < block_right; i++)
+		sum += cnt[i][k];
+	for (int i = l, lim = block_left * block_size; i < lim; i++)
+		if (a[i] == k)
+			sum++;
+	for (int i = block_right * block_size; i <= r; i++)
+		if (a[i] == k)
+			sum++;
+	return sum;
+}
