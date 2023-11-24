@@ -4,7 +4,7 @@
   - [My template C++](Contest%20Template/main.cpp)
 
 ## Graph
-  - Graph Traversing ([DFS](Graphs/Graph%20Traversal/DFS.cpp), [BFS](Graphs/Graph%20Traversal/BFS.cpp))
+  - Graph Traversing ([DFS](Graphs/Graph%20Traversal/DFS.cpp), [BFS](Graphs/Graph%20Traversal/BFS.cpp), [Diameter](Graphs/Graph%20Traversal/Diameter.cpp))
   - [Flood Fill](Graphs/Graph%20Traversal/Flood%20Fill.cpp)
   - Minimum Spanning Tree ([Kruskal](Graphs/Minimum%20Spanning%20Tree/Kruskal.cpp), [Prim](Graphs/Minimum%20Spanning%20Tree/Prim.cpp))
   - Shortest Paths ([Dijkstra](Graphs/Shortest%20Paths/Dijkstra.cpp), [Bellman-Ford](Graphs/Shortest%20Paths/Bellman_Ford.cpp), [0-1 BFS](Graphs/Shortest%20Paths/0-1%20BFS.cpp), [Floyd Warshall](Graphs/Shortest%20Paths/Floyd_Warshall.cpp), [K_Shortest_Path](Graphs/Shortest%20Paths/K_Shortest_Path.cpp))
