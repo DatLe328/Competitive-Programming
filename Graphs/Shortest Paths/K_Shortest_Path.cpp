@@ -1,3 +1,7 @@
+//Use priority_queue to store k smallest weight for each point
+//Use Dijkstra like normal
+//https://cses.fi/problemset/task/1196/
+
 #include<bits/stdc++.h>
 #define ar array
 #define ll long long
