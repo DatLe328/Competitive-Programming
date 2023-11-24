@@ -7,7 +7,7 @@
   - Graph Traversing ([DFS](Graphs/Graph%20Traversal/DFS.cpp), [BFS](Graphs/Graph%20Traversal/BFS.cpp))
   - [Flood Fill](Graphs/Graph%20Traversal/Flood%20Fill.cpp)
   - Minimum Spanning Tree ([Kruskal](Graphs/Minimum%20Spanning%20Tree/Kruskal.cpp), [Prim](Graphs/Minimum%20Spanning%20Tree/Prim.cpp))
-  - Shortest Paths ([Dijkstra](Graphs/Shortest%20Paths/Dijkstra.cpp), [Bellman-Ford](Graphs/Shortest%20Paths/Bellman_Ford.cpp), [0-1 BFS](Graphs/Shortest%20Paths/0-1%20BFS.cpp), [Floyd Warshall](Graphs/Shortest%20Paths/Floyd_Warshall.cpp), [K_Shortest_Path](Graphs/Shortest%20Paths/K_Shortest_Path.cpp]))
+  - Shortest Paths ([Dijkstra](Graphs/Shortest%20Paths/Dijkstra.cpp), [Bellman-Ford](Graphs/Shortest%20Paths/Bellman_Ford.cpp), [0-1 BFS](Graphs/Shortest%20Paths/0-1%20BFS.cpp), [Floyd Warshall](Graphs/Shortest%20Paths/Floyd_Warshall.cpp), [K_Shortest_Path](Graphs/Shortest Paths/K_Shortest_Path.cpp))
   - [Bridges and Articulation Points](Graphs/Strongly%20Connected%20Components%20(SSCs)/Bridges&ArticulationPoints.cpp)
   - Strongly Connected Components ([Tarjan](Graphs/Strongly%20Connected%20Components%20(SSCs)/Tarjan.cpp), [Kosaraju](Graphs/Strongly%20Connected%20Components%20(SSCs)/Kosaraju.cpp))
   - [Bipartite Matching](Graphs/Graph%20Traversal/Bipartite.cpp)
