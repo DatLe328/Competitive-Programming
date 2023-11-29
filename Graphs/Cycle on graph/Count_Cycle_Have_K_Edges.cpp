@@ -1,6 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+*/input
+	4 6
+	1 2
+	1 3
+	1 4
+	2 3
+	2 4
+	3 4
+Expected
+	4
+*/
 const int maxn = 1e5 + 1;
 vector<int> adj[maxn];
 int n, m, k, total_cycle = 0, visited[maxn];
