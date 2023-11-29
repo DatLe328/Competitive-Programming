@@ -4,16 +4,17 @@
     of the tree is the distance between b and c.  
 */
 //input
-// 7 6
-// 1 2
-// 1 3
-// 2 5
-// 2 6
-// 1 4
-// 4 7
+ 7 6
+ 1 2
+ 1 3
+ 2 5
+ 2 6
+ 1 4
+ 4 7
 
-//expected
-//4
+expected
+4
+    */
 #include<bits/stdc++.h>
 using namespace std;
 const int maxn = 1e5 + 1;
