@@ -3,7 +3,7 @@
     farthest node b from a. Then, we find the farthest node c from b. The diameter
     of the tree is the distance between b and c.  
 */
-//input
+input
  7 6
  1 2
  1 3
@@ -14,7 +14,7 @@
 
 expected
 4
-    */
+*/
 #include<bits/stdc++.h>
 using namespace std;
 const int maxn = 1e5 + 1;
