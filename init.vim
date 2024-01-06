@@ -6,7 +6,28 @@ syntax on
 :set smarttab
 :set softtabstop=4
 :set mouse=a
-
+" let b:coc_diagnostic_disable=1
+"Disable perl notification
+:set encoding=utf-8
+let g:ycm_server_use_vim_stdout = 1
+let g:ycm_server_log_level = 'debug'
+let g:ycm_global_ycm_extra_conf = 'cpp'
+let g:loaded_perl_provider = 0
+let g:ycm_global_ycm_extra_conf = 'C:/Users/datle\AppData/Local/nvim-data/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm'
+"Copy paste between nvim and window's applications
+:set clipboard=unnamedplus
+let g:clipboard = {
+                \   'name': 'WslClipboard',
+                \   'copy': {
+                \      '+': 'clip.exe',
+                \      '*': 'clip.exe',
+                \    },
+                \   'paste': {
+                \      '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+                \      '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+                \   },
+                \   'cache_enabled': 0,
+                \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Compile and run cpp file
@@ -31,13 +52,14 @@ function! RunFile()
 		if filereadable(g:input_file)
         " Chạy file C++ và truyền địa chỉ file input và output
 			execute ":w"
-			execute ':!g++ % -o %< && ./%< < ' . g:input_file . ' > ' . g:output_file '2>&1'
+			execute ":!g++ % -o %"
+			execute ":!% < . g:input_file > . g:output_file"
 		else
 			echomsg 'File input not found: ' . g:input_file
 		endif
 		
-		"execute ":w"
-        "execute ":!g++ % -o %< && ./%< < . g:input_file > . g:output_file 2>&1"
+		" execute :w"
+        " execute :!g++ % -o %< && ./%< < . g:input_file > . g:output_file 2>&1"
 	"Python 
 	elseif l:filetype == 'python'
         echomsg "Running Python file!"
@@ -113,11 +135,13 @@ function! CreateInputOutputFiles()
     " Kiểm tra và tạo file input nếu chưa tồn tại
     if !filereadable(g:input_file) && g:input_file != ''
         call writefile([''], g:input_file)
+		execute ":w"
     endif
 
     " Kiểm tra và tạo file output nếu chưa tồn tại
     if !filereadable(g:output_file) && g:output_file != ''
         call writefile([''], g:output_file)
+		execute ":w"
     endif
 endfunction
 
@@ -171,9 +195,8 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/rstacruz/vim-closer' " For brackets autocompletion
-
-
-" Auto-completion  For Javascript
+" Plug 'dense-analysis/ale'
+"Auto-completion  For Javascript
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
@@ -194,6 +217,7 @@ set encoding=UTF-8
 
 call plug#end()
 
+nnoremap <C-r> :NERDTreeRefresh<CR>
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
